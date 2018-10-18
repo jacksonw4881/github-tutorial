@@ -1,26 +1,29 @@
 # GitHub Tutorial
 
-_by <your-name-here>_
+_by Jackson Wu_
 
 ---
-## Git vs. GitHub
+## Git vs. GitHub:
+**Git:** A version control to track your changes.  
 
+**Github:** A website that works using git that holds your code.   
 
-
----
-## Initial Setup
-
-
+**Git is needed for github**
 
 ---
-## Repository Setup
+## Initial Setup:
 
 
 
 ---
-## Workflow & Commands
+## Repository Setup:
 
 
 
 ---
-## Rolling Back Changes
+## Workflow & Commands:
+
+
+
+---
+## Rolling Back Changes:
