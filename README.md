@@ -81,3 +81,13 @@ _Voila! You've just linked your SSH key from cloud 9 to GitHub_ :)
 8. Afterwards, copy, paste, and enter ```git push -u origin master``` from your github repository onto your c9 terminal 
  
 _Voila! You've just created your first repository and pushed your changes to your remote repository_ :)
+
+
+---
+## Workflow & Commands:
+---
+## Rolling Back Changes:
+---
+## Error handling:
+---
+## Collaboration:
