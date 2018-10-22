@@ -26,8 +26,8 @@ _by Jackson Wu_
 3. Create a username for the username section (If you're an HSTAT student, put in your HSTAT email without the @hstat.org).
 4. Put your email in the email section (Your own personal email or your school's email).
 5. Create a password (Something easy to remember, like your ID number).
-6. Click on "sign up for GitHub".
-7. Click "create an account".
+6. Verify your account by playing the puzzle
+7. Click "continue".
 8. Choose the free plan or the paid plan that costs $7.
 9. Click "continue".
 10. Complete the survey and click "submit" (Or skip the survey by clicking "skip this step").
@@ -156,6 +156,10 @@ _Voila! You've just created your first repository and pushed your changes to you
 > **Q:** I've accidently edited, added, and committed the wrong file. How do I undo everything to the point where the file reverted back to what it was originally was?
 
 **A:** Use ```git reset --hard HEAD~1``` to reset everything to what it was originally was as if you've just opened the file.
+
+> **Q:** I've accidently pushed my commits to my remote repository. How do I undo my push?
+
+**A:** Use ```git revert SHA``` to undo the push. The ```SHA``` is a series of numbers that are located next to your commit when you use ```git log``` on your cloud 9 terminal. (To exit git log on cloud 9, press the **q** key)
 
 ---
 ## Error handling:
