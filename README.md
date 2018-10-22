@@ -97,7 +97,7 @@ _Voila! You've just created your first repository and pushed your changes to you
     * **Remote repository**: Repositories on GitHub 
     
 * **_Important Git Commands:_**  
-  * ```git status```: Tells you which files were added to the staging area, which aren't, and which files are ready to be commited.
+  * ```git status```: Tells you which files were added to the staging area, which weren't, and which files are ready to be commited.
   * ```git init```: Initalizes git in a directory. This command allows you to utilize other git commands.
   * ```git add filename```: Adds a file to the staging area.
   * ```git add .```: Adds all new and modified files to the staging area. (Excludes deleted and renamed files)(Tip: If you're really lazy like me and don't feel like typing the first letter of your file and ```tab``` to add a file, just use ```git add .``` as a shortcut)
@@ -202,9 +202,9 @@ _**How to completely remove a repository on your remote:**_
 
 **Pull Requests:** If you'd changed a file on your forked repository and want those changes to be on the original repository you forked, do pull requests. However, pull requests can be denied if the owner of the original repository doesn't want your changes to be on their repository.
 
-**Approved pull request:** Your changes go towards the original repository
+**Approved pull request:** Your changes go towards the original repository.
 
-**Denied pull request:** Nothing happens to the original repository
+**Denied pull request:** Nothing happens to the original repository.
 
 **_How to fork, clone and do a pull request:_**
 
