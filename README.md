@@ -159,7 +159,7 @@ _Voila! You've just created your first repository and pushed your changes to you
 
 > **Q:** I've accidently pushed my commits to my remote repository. How do I undo my push?
 
-**A:** Use ```git revert SHA``` to undo the push. The ```SHA``` is a series of numbers that are located next to your commit when you use ```git log``` on your cloud 9 terminal. (To exit git log on cloud 9, press the **q** key)
+**A:** Use ```git revert SHA``` to undo the push. The ```SHA``` is a series of numbers and letters that are located next to your commit when you use ```git log``` on your cloud 9 terminal. (To exit git log on cloud 9, press the **q** key)
 
 ---
 ## Error handling:
