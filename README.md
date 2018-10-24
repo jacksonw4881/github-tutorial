@@ -25,7 +25,7 @@ _by Jackson Wu_
 2. Click "sign up" on the top right hand corner. 
 3. Create a username for the username section (If you're an HSTAT student, put in your HSTAT email without the @hstat.org).
 4. Put your email in the email section (Your own personal email or your school's email).
-5. Create a password (Something easy to remember, like your ID number).
+5. Create a password (Something easy to remember, like your student ID number).
 6. Verify your account by playing the puzzle
 7. Click "continue".
 8. Choose the free plan or the paid plan that costs $7.
@@ -34,7 +34,7 @@ _by Jackson Wu_
 
 _Voila! You've just created your GitHub account_ :) 
 
-**Once you've created your GitHub account, you'd need to link an SSH Key from Cloud 9 to GitHub. An SSH key is used to keep your files secure and used to connect the local repository to the remote repository.**
+**Once you've created your GitHub account, you'd need to link an SSH Key from Cloud 9 to GitHub. An SSH key is used to keep your files secure and is used to connect the local repository to the remote repository.**
 
 **_How to link an SSH Key from Cloud 9 to GitHub (Assuming you're using Cloud 9 for your IDE):_**
 
@@ -72,11 +72,11 @@ _Voila! You've just linked your SSH key from cloud 9 to GitHub_ :)
 **_How to create, add, commit and push your file to GitHub:_**
 
 1. Go to your Cloud 9 terminal.
-2. Type and enter ```mkdir reponame``` to create a directory (Make sure you're currently on ~/workspace) and then type and enter ```cd reponame``` to move to that directory.
-3. Type and enter ```touch README.md``` to create a file within that directory and then type and enter```git init``` to initalize git within that directory.
+2. Type and enter ```mkdir (reponame)``` to create a directory (Make sure you're currently on ~/workspace) and then type and enter ```cd reponame``` to move to that directory.
+3. Type and enter ```touch README.md``` to create a README file within that directory and then type and enter```git init``` to initalize git within that directory.
 4. Open and edit your file (optional).
 5. Type and enter```git add README.md``` to add your file to the staging area.
-6. Type and enter```git commit -m "commit message"``` to commit that file.
+6. Type and enter```git commit -m "(a commit message)"``` to commit that file.
 7. Go back to Cloud 9 and copy, paste and enter ```git remote add origin git@github.com:username/reponame.git``` from your github repository onto your c9 terminal.
 8. Afterwards, copy, paste, and enter ```git push -u origin master``` from your github repository onto your c9 terminal.
  
@@ -108,15 +108,15 @@ _Voila! You've just created your first repository and pushed your changes to you
     * **remote -** Sets up the connection between the local repository. and the remote repository.
     * **add -** Adds the remote repository.
     * **origin -** Nickname for the remote repository.
-    * **URL -** The URL to the remote repository. Could be in HTTPS or SSH. (Should be in SSH)
+    * **URL -** The URL to the remote repository. Could be in HTTPS or SSH. (It should be in SSH)
   * ```git push -u origin master```: Pushes changes from your local repository to your remote repository. (**Only needed to be used once after using ```git remote add origin URL```. To push more commits you've made after that, use ```git push```**).
     * **git -** The git command.
     * **push -** Sends the commits from the local repository to the remote repository.
-    * **-u -** The "u" stands for upstream. This will make the terminal remember which specific remote repository to push your changes to in the future when you use ```git push```.
+    * **-u -** The "u" stands for upstream. This will make the terminal remember which specific remote repository to push your changes to. In the future, you can use ```git push```.
     * **origin -** The specific remote repository you're pushing to.
     * **master -** The branch in your remote repository that contains your own commits you've pushed.
     
-  * ```git push```: Pushes your changes from your local repository to your remote repository (**Can only be used to files that have been committed**).
+  * ```git push```: Pushes your changes from your local repository to your remote repository (**Can only be used to files that had been committed**).
   
 **You'd have to do these series of commands on your terminal to push your changes to the remote repository if you're pushing for the first time, in chronological order:**
 
@@ -135,7 +135,7 @@ _Voila! You've just created your first repository and pushed your changes to you
 ---
 ## Rolling Back Changes:
 
-**On rare occasions, you'll make some sort of mistake on a file and want to revert back to its previous state. To explain this as clear and concise as I possibly could, I'll try to explain it in a form of a question and answer it.**
+**On rare occasions, you'll make some sort of mistake on a file and want to revert back to its previous state. To explain this as clear and concise as I possibly can, I'll try to explain it in a form of a question and answer it.**
 
 > **Q:** I've accidently edited the wrong file and want to undo all of my edits. What do I do?
 
@@ -177,7 +177,7 @@ _Voila! You've just created your first repository and pushed your changes to you
 _**How to completely remove a repository on your local:**_
 
 1. Go to your Cloud 9 terminal.
-2. Use ```rm -rf``` to remove all the content of a directory and the directory itself or use ```rmdir``` to remove an empty directory.
+2. Use ```rm -rf``` to remove all the content in a directory and the directory itself or use ```rmdir``` to remove an empty directory.
 
 _**How to completely remove a repository on your remote:**_
 
@@ -206,7 +206,7 @@ _**How to completely remove a repository on your remote:**_
 
 **Pull Requests:** If you'd changed a file on your forked repository and want those changes to be on the original repository you forked, do pull requests. However, pull requests can be denied if the owner of the original repository doesn't want your changes to be on their repository.
 
-**Approved pull request:** Your changes go towards the original repository.
+**Approved pull request:** Your changes will go towards the original repository.
 
 **Denied pull request:** Nothing happens to the original repository.
 
@@ -218,8 +218,15 @@ _**How to completely remove a repository on your remote:**_
 4. From there, click on the green "Clone or download" button.
 5. If it's on HTTPS change it to SSH but if it's already on SSH when you'd clicked on the green button, leave it.
 6. Click on the "Clipboard" icon next to the link.
-7. Type in ```git clone``` and then paste the link onto your Cloud 9 terminal (Make sure you're currently on ~/workspace).
+7. Type in ```git clone``` and then paste the SSH onto your Cloud 9  terminal (Make sure you're currently on ~/workspace).
 8. Edit a file or files and then type and enter ```git add filename``` (Can be replaced with ```git add .``` or ```git add --all``` depending on the situation), ```git commit -m "message"```, and ```git push``.` 
 9. Go to your forked repository and click on "New pull requests".
 10. Click on the green button that says "Create pull request".
 11. Have your partner approve the pull request (Hopefully).
+
+<!--
+Suggestions
+- On line 68, Please explain: use screenshots
+- On line 80, i want to suggest that you should make the git@github.com:username/reponame.git into git@github.com:(username)/(reponame).git so it is easier to understnad that it is an insert
+- On line 146, I think you should replace "undo the adding" with "unstage the file" 
+-->
