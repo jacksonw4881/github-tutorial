@@ -85,7 +85,7 @@ _Voila! You've just created your first repository and pushed your changes to you
 ---
 ## Workflow & Commands:
 
-**After you've created your first repository and whatnot, you'll have to know the difference between the working directory, staging area, and repository. You'd also have to know some commands in order to use github and git properly.**
+**After you've created your first repository and whatnot, you'll have to know the difference between the working directory, staging area, and repository. You'd also have to know some commands in order to use Git and GitHub properly.**
 
 * **_Difference between working directory, staging area, and repository:_**
 
@@ -95,7 +95,35 @@ _Voila! You've just created your first repository and pushed your changes to you
 
     * **Local repository**: Directories on Cloud 9 
     * **Remote repository**: Repositories on GitHub 
-    
+* **_Important Command Line Commands_**:
+  * ```↑ up arrow```: Views the previous commands you've typed. (Makes it easier to use a command you've already did rather than typing the command)
+  * ```tab```: Automatically completes a name you want to type if it's unique.
+  * ```clear```: Clear all the commands you've made on your terminal but doesn't delete them.
+  * ```Control K```: Permanently deletes all the commands you've made on your terminal but doesn't revert the action.
+  * ```~```: The root. You can use ```cd ~/workspace``` and automatically be in that directory regardless of what directory you're in.
+  * ```..```: Used in conjunction with ```cd``` to move up one directory.
+  * ```/```: Used at the end of ```cd``` to navigate to another directory easier.
+    * If you're still confused, imagine this file tree structure:
+      * nyc
+        * brooklyn
+          * bay-ridge
+          * park-slope
+        * manhattan
+        * queens 
+        * the-bronx
+        * staten-island
+    * You're currently at the bay-ridge directory and want to change to the nyc directory. You could use ```cd brooklyn``` and then ```cd nyc``` or ```cd ..``` twice, but we're too lazy and time is valuable. Instead, we could use ```cd brooklyn/nyc``` or ```cd../..``` to navigate to the nyc directory as a way to save time and energy.
+  * ```cd```: Changes directories that are adjecent to each other. (Cannot be used to move to another directory that is not adjecent to the directory you're currently in unless you use ```/``` or ```cd ~/workspace```)
+  * ```ls```: List files in a directory.
+  * ```mkdir```: Makes a new directory.
+  * ```rmdir```: Removes a directory (Cannot be used if there is a file(s)/content within the directory)
+  * ```touch```: Creates a new file
+  * ```rm```: Removes a directory
+  * ```rm -rf```: Forcibly removes all the contents in a directory and the directory itself.
+  * ```mv (existing name) (new name)```: Renames a file or directory
+  * ```mv (existing name) (old name)```: Moves a file or directory
+  * ```c9 file```: Opens a file on cloud 9```
+
 * **_Important Git Commands:_**  
   * ```git status```: Tells you which files were added to the staging area, which weren't, and which files are ready to be commited.
   * ```git init```: Initalizes git in a directory. This command allows you to utilize other git commands.
