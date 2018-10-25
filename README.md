@@ -143,7 +143,7 @@ _Voila! You've just created your first repository and pushed your changes to you
 
 > **Q:** I've accidently added my file to the staging area and want to undo that action. What do I do?
 
-**A:** Use ```git reset HEAD filename``` to undo the adding.
+**A:** Use ```git reset HEAD filename``` to unstage the file.
 
 > **Q:** I've committed my file but accidently used the wrong commit message. How do I undo my commit?
 
@@ -219,7 +219,7 @@ _**How to completely remove a repository on your remote:**_
 5. If it's on HTTPS change it to SSH but if it's already on SSH when you'd clicked on the green button, leave it.
 6. Click on the "Clipboard" icon next to the link.
 7. Type in ```git clone``` and then paste the SSH onto your Cloud 9  terminal (Make sure you're currently on ~/workspace).
-8. Edit a file or files and then type and enter ```git add filename``` (Can be replaced with ```git add .``` or ```git add --all``` depending on the situation), ```git commit -m "message"```, and ```git push``.` 
+8. Edit a file or files and then type and enter ```git add filename``` (Can be replaced with ```git add .``` or ```git add --all``` depending on the situation), ```git commit -m "message"```, and ```git push```. 
 9. Go to your forked repository and click on "New pull requests".
 10. Click on the green button that says "Create pull request".
 11. Have your partner approve the pull request (Hopefully).
