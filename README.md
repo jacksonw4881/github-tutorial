@@ -22,16 +22,19 @@ _by Jackson Wu_
 **_How to create a github account_**: 
 
 1. Go to Github.com [here](http://github.com).
-2. Click "sign up" on the top right hand corner. 
+2. Click "sign up" on the top right hand corner.
+![signup](signup.png)
 3. Create a username for the username section (If you're an HSTAT student, put in your HSTAT email without the @hstat.org).
 4. Put your email in the email section (Your own personal email or your school's email).
 5. Create a password (Something easy to remember, like your student ID number).
+![githubsignup](githubsignup.png)
 6. Verify your account by playing the puzzle
 7. Click "continue".
 8. Choose the free plan or the paid plan that costs $7.
+![personalplan](personalplan.png)
 9. Click "continue".
 10. Complete the survey and click "submit" (Or skip the survey by clicking "skip this step").
-
+![surveythingy](surveythingy.png)
 _Voila! You've just created your GitHub account_ :) 
 
 **Once you've created your GitHub account, you'd need to link an SSH Key from Cloud 9 to GitHub. An SSH key is used to keep your files secure and is used to connect the local repository to the remote repository.**
@@ -40,16 +43,23 @@ _Voila! You've just created your GitHub account_ :)
 
 1. Go to your Cloud 9 dashboard.
 2. Click on the gear icon on the top right corner.
+![gearicon](gearicon.png)
 3. Click on the SSH Keys on the left hand side.
+![c9sshkey](c9sshkey.png)
 4. Copy your second SSH key (Should start with ssh-rsa and a whole bunch of letters and numbers).
 5. Go to your GitHub dashboard on Github.com.
 6. Click on your profile icon on the top right corner and click on setting.
+![profileicon](profileicon.png)
 7. Click on "SSH and GPG keys" on the left hand side.
+![sshandgpgkey](sshandgpgkey.png)
 8. Click on "New SSH Key".
+![newsshkey](newsshkey.png)
 9. Put a title for the title section.
 10. Paste in your key in the key section.
 11. Click "add SSH key".
+![sshkey](sshkey.png)
 12. Go to your Cloud 9 terminal and type in "ssh -T git@github.com" and enter. If you've done it successfully, it should say "Hi (your username)! You've successfully authenticated, but GitHub does not provide shell access."
+![authentication](authentication.png)
 
 _Voila! You've just linked your SSH key from cloud 9 to GitHub_ :)
 
@@ -63,9 +73,12 @@ _Voila! You've just linked your SSH key from cloud 9 to GitHub_ :)
 1. Go to Github.com [here](http://github.com).
 2. Click on the plus icon on the top right corner.
 3. Click on "New Repository".
+![newrepository](newrepository.png)
 4. Add a name for your repository (And a description if you'd like).
 5. Click "Create repository".
+![createrepository](createremoterepository.png)
 6. If it's on HTTPS, change it to SSH. If it's already on SSH when you've created the repository, leave it.
+![httpsssh](httpsssh.png)  
 
 **After creating your repository, you have to send your changes you've done on your file(s) from Cloud 9 to your remote repository on GitHub.**
 
@@ -100,7 +113,7 @@ _Voila! You've just created your first repository and pushed your changes to you
   * ```tab```: Automatically completes a name you want to type if it's unique.
   * ```clear```: Clear all the commands you've made on your terminal but doesn't delete them.
   * ```Control K```: Permanently deletes all the commands you've made on your terminal but doesn't revert the action.
-  * ```~```: The root. You can use ```cd ~/workspace``` and automatically be in that directory regardless of what directory you're in.
+  * ```~```: The root. You can use ```cd ~/workspace``` and automatically be in that directory regardless of what directory you're currently in.
   * ```..```: Used in conjunction with ```cd``` to move up one directory.
   * ```/```: Used at the end of ```cd``` to navigate to another directory easier.
     * If you're still confused, imagine this file tree structure:
@@ -211,14 +224,16 @@ _**How to completely remove a repository on your remote:**_
 
 1. Go to Github.com [here](http://github.com).
 2. Click on your profile icon on the top right and corner and then click on "your repositories".
+![profileicon](profileicon.png)
 3. Click on the repository you intend to delete.
-4. Click on "Settings".
+4. Click on "Settings".  
+![settings](settings.png)
 5. Scroll down until you see "Danger Zone".
 6. Click "delete this repository".
+![dangerzone](dangerzone.png)
 7. Type in the name of your repository you intend to delete.
 8. Click "I understand the consquences, delete this repository".
-9. Put in your password.
-10. Click "Confirm password".
+![deleterepo](deleterepo.png)
 
 ---
 ## Collaboration:
@@ -242,19 +257,16 @@ _**How to completely remove a repository on your remote:**_
 
 1. Have your partner or whatever send you a link to their repository.
 2. Click on the "Fork" icon on the top right hand side.
+![fork](fork.png)
 3. Wait for your forked repository to load.
 4. From there, click on the green "Clone or download" button.
+![cloneordownload](cloneordownload.png)
 5. If it's on HTTPS change it to SSH but if it's already on SSH when you'd clicked on the green button, leave it.
 6. Click on the "Clipboard" icon next to the link.
+![httpsandssh](httpsandssh.png)
 7. Type in ```git clone``` and then paste the SSH onto your Cloud 9  terminal (Make sure you're currently on ~/workspace).
+![gitclone](gitclone.png)
 8. Edit a file or files and then type and enter ```git add filename``` (Can be replaced with ```git add .``` or ```git add --all``` depending on the situation), ```git commit -m "message"```, and ```git push```. 
 9. Go to your forked repository and click on "New pull requests".
 10. Click on the green button that says "Create pull request".
 11. Have your partner approve the pull request (Hopefully).
-
-<!--
-Suggestions
-- On line 68, Please explain: use screenshots
-- On line 80, i want to suggest that you should make the git@github.com:username/reponame.git into git@github.com:(username)/(reponame).git so it is easier to understnad that it is an insert
-- On line 146, I think you should replace "undo the adding" with "unstage the file" 
--->
