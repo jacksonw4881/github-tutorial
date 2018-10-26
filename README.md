@@ -125,7 +125,7 @@ _Voila! You've just created your first repository and pushed your changes to you
         * queens 
         * the-bronx
         * staten-island
-    * You're currently at the bay-ridge directory and want to change to the nyc directory. You could use ```cd brooklyn``` and then ```cd nyc``` or ```cd ..``` twice, but we're too lazy and time is valuable. Instead, we could use ```cd brooklyn/nyc``` or ```cd../..``` to navigate to the nyc directory as a way to save time and energy.
+    * You're currently at the bay-ridge directory and want to change to the nyc directory. You could use ```cd brooklyn``` and then ```cd nyc``` or ```cd ..``` twice, but we're too lazy and time is valuable. Instead, we could use ```cd brooklyn/nyc``` or ```cd ../..``` to navigate to the nyc directory as a way to save time and energy.
   * ```cd```: Changes directories that are adjecent to each other. (Cannot be used to move to another directory that is not adjecent to the directory you're currently in unless you use ```/``` or ```cd ~/workspace```)
   * ```ls```: List files in a directory.
   * ```mkdir```: Makes a new directory.
